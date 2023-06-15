@@ -1,6 +1,6 @@
 const express = require('express')
 const mongoose = require('mongoose')
-const coors = require('cors')
+const cors = require('cors')
 require('dotenv').config()
 
 const breadRoutes = require('./routes/bread')
@@ -9,6 +9,7 @@ const app = express()
 
 //middlewares
 app.use(express.json())
+app.use(cors())
 
 //routes
 app.use('/breads',breadRoutes)
