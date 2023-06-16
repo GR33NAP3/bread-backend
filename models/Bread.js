@@ -10,7 +10,7 @@ const breadSchema = new mongoose.Schema({
   },
   image: {
     type: String,
-    default: 'https://thumbs.dreamstime.com/b/bread-cut-14027607.jpgS'
+    default: 'https://thumbs.dreamstime.com/b/bread-cut-14027607.jpg'
   },
     // baker: {
     //   type: mongoose.Types.ObjectId,
