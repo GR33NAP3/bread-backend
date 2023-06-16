@@ -16,6 +16,7 @@ async function getBreadById(req,res) {
     try {
         const { id } = req.params
         const bread = await Bread.findById(id)
+        if(!bread) throw new Error('error fetching bread')
         res.json(bread)
     } catch (error) {
         console.log(`error fetching bread by id:`, error)
